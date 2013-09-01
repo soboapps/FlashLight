@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:title="Options">
+        
+        <CheckBoxPreference
+                android:title="Sound"
+                android:defaultValue="true"
+                android:summaryOff="Sound is Off"
+                android:summaryOn="Sound is On"
+                android:key="soundPrefCheck" />
+
+</PreferenceScreen>

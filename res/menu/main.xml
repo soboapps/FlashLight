@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+            android:id="@+id/menuExit"
+            android:alphabeticShortcut="x"
+            android:title="@string/stExit"
+            android:icon="@drawable/ic_menu_exit"
+            android:showAsAction="ifRoom|withText" />
+
+    <item
+            android:id="@+id/menuDonate"
+            android:alphabeticShortcut="d"
+            android:icon="@drawable/ic_donate"
+            android:title="@string/stDonate"
+            android:showAsAction="ifRoom|withText" />
+    
+    <item
+            android:id="@+id/menuAbout"
+            android:alphabeticShortcut="a"
+            android:icon="@drawable/ic_menu_about"
+            android:title="@string/stAbout"	
+            android:showAsAction="ifRoom|withText" />
+    
+
+</menu>

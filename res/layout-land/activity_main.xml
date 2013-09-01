@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/radial_background"
+                tools:context=".MainActivity" >
+                
+		    <SurfaceView
+		    	android:id="@+id/PREVIEW"
+		    	android:layout_width="1dip"
+		    	android:layout_height="1dip"/>
+		
+		    <ImageButton
+		        android:id="@+id/btnSwitch"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_centerHorizontal="true"
+		        android:layout_centerVertical="true"
+		        android:background="@null"
+		        android:contentDescription="@null"
+		        android:src="@drawable/flashlight_on" />
+		   	        		
+		    <TextView 
+		        android:text="My Flashlight"
+		        android:id="@+id/txtOnOff"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentBottom="true"
+		        android:layout_centerHorizontal="true"
+		        android:gravity="center"
+		        android:padding="15dip"
+		        android:textSize="13sp"
+		        android:textColor="#3b3b3b"
+		        android:layout_marginBottom="15dip"/>
+
+</RelativeLayout>
