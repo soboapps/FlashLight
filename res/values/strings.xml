@@ -4,7 +4,9 @@
     <string name="app_name">Flashlight</string>
     <string name="stVerName">version</string>
     <string name="action_settings">Settings</string>
-    <string name="hello_world">Hello world!</string>
+    <string name="ok">OK</string>
+    <string name="on">ON</string>
+    <string name="off">OFF</string>
     <string name="stDonate">Donate</string>
     <string name="donate1">Donate $1</string>
     <string name="stAbout">About</string>
@@ -12,9 +14,12 @@
     <string name="stExit">Exit</string>
     <string name="stCompany">South Bound Apps</string>
     <string name="stWWW">http://www.soboapps.com</string>
-    <string name="stAbout_lr">Flashlight 1.4 \u00A9 2013</string>
+    <string name="stAbout_lr">Flashlight 1.6 \u00A9 2013</string>
     <string name="stCopyRight">\u00A9 2013</string>
     <string name="stSlogan">Flashlight, Bright Huh?!</string>
     <string name="stCredits">Credits: Thanks AndroidHive.com for the Tutorial!</string>
+    <string name="no_flash">No Flash</string>
+    <string name="no_flash_message">No Camera Flash Detected! Application will Close.</string>
+    <string name="camera_fail">Camera Error. Failed to Open. Error: </string>
 
 </resources>
