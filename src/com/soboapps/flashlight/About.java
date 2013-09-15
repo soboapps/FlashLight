@@ -18,12 +18,12 @@ public class About extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.about);
 		
-		try {
-			String versionName = context.getPackageManager().getPackageInfo(context.getPackageName(), 0).versionName;
-		} catch (NameNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		//try {
+		//	String versionName = context.getPackageManager().getPackageInfo(context.getPackageName(), 0).versionName;
+		//} catch (NameNotFoundException e) {
+		//	// TODO Auto-generated catch block
+		//	e.printStackTrace();
+		//}
 		
 		//PackageManager manager = this.getPackageManager();
 		//PackageInfo info = manager.getPackageInfo(this.getPackageName(), 0);
