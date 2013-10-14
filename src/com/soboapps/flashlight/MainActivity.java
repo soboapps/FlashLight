@@ -52,14 +52,14 @@ public class MainActivity extends Activity implements Callback {
 
         if (!hasFlash) {
         	
-            // device doesn't have or support a LED flash
+            	// device doesn't have or support a LED flash
         	Toast toast = Toast.makeText(this, (R.string.no_flash_message), Toast.LENGTH_LONG);
         	toast.setGravity(Gravity.CENTER, 0, 0);
         	toast.show();
         	
-            // Show message and sho2w a white screen 
-   			TextView txtBkupLight=(TextView)findViewById(R.id.tvBkupLightSrc);
-   			txtBkupLight.setBackgroundColor(Color.WHITE);
+            	// Show message and sho2w a white screen 
+   		TextView txtBkupLight=(TextView)findViewById(R.id.tvBkupLightSrc);
+   		txtBkupLight.setBackgroundColor(Color.WHITE);
    			
 	        } else {
 	
