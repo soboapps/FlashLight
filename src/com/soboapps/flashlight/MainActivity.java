@@ -51,42 +51,40 @@ public class MainActivity extends Activity implements Callback {
                 .hasSystemFeature(PackageManager.FEATURE_CAMERA_FLASH);
 
         if (!hasFlash) {
-            // device doesn't support flash
-            // Show alert message and close the application
-        	AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
-            	builder.setTitle("No Flash")
-            	.setMessage("No Camera Flash Detected! Application will Close.")
-            	.setCancelable(false)
-            	.setNegativeButton("OK",new DialogInterface.OnClickListener() {
-            		public void onClick(DialogInterface dialog, int id) {
-            			finish();
-            		}
-            	});
-            	AlertDialog alert = builder.create();
-            	alert.show();
-        	}
-
-        // get the camera
-        getCamera();
-
-        // displaying power button image
-        togglePowerButtonImage();
-
-        // Switch button click event to toggle flash on/off
-        btnSwitch.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
-                if (isFlashOn) {
-                    // turn off flash
-                    turnOffFlash();
-                } else {
-                    // turn on flash
-                    turnOnFlash();
-                }
-            }
-        });
-    }
+        	
+            // device doesn't have or support a LED flash
+        	Toast toast = Toast.makeText(this, (R.string.no_flash_message), Toast.LENGTH_LONG);
+        	toast.setGravity(Gravity.CENTER, 0, 0);
+        	toast.show();
+        	
+            // Show message and sho2w a white screen 
+   			TextView txtBkupLight=(TextView)findViewById(R.id.tvBkupLightSrc);
+   			txtBkupLight.setBackgroundColor(Color.WHITE);
+   			
+	        } else {
+	
+	        // get the camera
+	        getCamera();
+	
+	        // displaying power button image
+	        togglePowerButtonImage();
+	
+	        // Switch button click event to toggle flash on/off
+	        btnSwitch.setOnClickListener(new View.OnClickListener() {
+	
+	            @Override
+	            public void onClick(View v) {
+	                if (isFlashOn) {
+	                    // turn off flash
+	                    turnOffFlash();
+	                } else {
+	                    // turn on flash
+	                    turnOnFlash();
+	                }
+	            }
+	        });
+	        }
+        }
 
     // Get the camera
     private void getCamera() {
